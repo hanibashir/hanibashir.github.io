@@ -1,0 +1,99 @@
+---
+import { type ProjectsSchema } from "../content/config";
+import BaseLayout from "./BaseLayout.astro";
+import dayjs from "dayjs";
+import localizedFormat from "dayjs/plugin/localizedFormat";
+import { Image } from "astro:assets";
+import Link from "@components/Link.astro";
+import { simd } from "sharp";
+
+export interface Props extends ProjectsSchema {}
+
+const {
+  title,
+  description,
+  pubDate,
+  updatedDate,
+  heroImage,
+  badges = [],
+  tags = [],
+  custom_link_label = [], // array of objects
+} = Astro.props;
+dayjs.extend(localizedFormat);
+const displayDate = dayjs(pubDate).format("ll");
+---
+
+<BaseLayout title={title} description={description} image={heroImage}>
+  <main class="md:flex md:justify-center">
+    <article class="prose prose-lg max-w-[750px] prose-img:mx-auto">
+      {
+        heroImage && (
+          <Image
+            width={750}
+            height={422}
+            format="webp"
+            src={heroImage}
+            alt={title}
+            class="w-full mb-6"
+          />
+        )
+      }
+      <h1 class="title my-2 text-4xl font-bold">{title}</h1>
+      {pubDate && <time>{displayDate}</time>}
+      <br />
+
+      
+      <div class="row">
+        <!-- Project custom links -->
+        <div class="card-actions justify-end mt-0.5 p-2">
+          {
+            custom_link_label &&
+              custom_link_label.map((cll) => (
+                <Link
+                  href={cll.url}
+                  calsses="btn no-underline"
+                  text={cll.name}
+                  style="primary"
+                  icon={{
+                    path: cll.icon || "/github.svg",
+                    side: "left",
+                  }}
+                  target="_blank"
+                />
+              ))
+          }
+        </div>
+        <!-- //Project custom links -->
+
+        {
+          badges &&
+            badges.map((badge) => (
+              <div class="badge badge-secondary my-1">{badge}</div>
+            ))
+        }
+        {
+          tags &&
+            tags.map((tag) => (
+              <a
+                href={`/projects/tag/${tag}`}
+                class="badge badge-outline ml-2 no-underline"
+              >
+                {tag}
+              </a>
+            ))
+        }
+        {
+          updatedDate && (
+            <div>
+              {" "}
+              Last updated on <time>{updatedDate}</time>{" "}
+            </div>
+          )
+        }
+      </div>
+
+      <div class="divider my-2"></div>
+      <slot />
+    </article>
+  </main>
+</BaseLayout>

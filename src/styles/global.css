@@ -1,0 +1,23 @@
+.time-line-container>div:last-child .education__time>.education__line {
+    display: none;
+}
+
+.link {
+    --type: transparent;
+    --fill: transparent;
+    display: flex;
+    place-items: center;
+    gap: var(--space-2xs);
+    width: fit-content;
+    padding: calc(var(--space-2xs) * 0.75) var(--space-sm);
+    background-color: var(--fill);
+    color: var(--type);
+    font-size: var(--fs-md);
+    border-radius: var(--radius-sm);
+    border-width: var(--border-md);
+    border-style: solid;
+    border-color: transparent;
+    text-decoration: none;
+    line-height: var(--lh-1);
+
+}
