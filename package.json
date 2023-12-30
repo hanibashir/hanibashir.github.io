@@ -3,7 +3,7 @@
   "description": "Hani Bashir protfolio website Created with 'Astrofy' Template.",
   "type": "module",
   "version": "2.5.1",
-  "packageManager": "pnpm@10.2.5",
+  "packageManager": "pnpm@8.13.1",
   "private": true,
   "scripts": {
     "dev": "astro dev",
