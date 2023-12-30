@@ -1,13 +1,13 @@
 ---
 title: "blog50"
 description: "For my final project in CS50, I stepped into the world of Python and Flask, which marked my first-ever experience with these technologies. Before this, my background primarily revolved around PHP and Laravel, making this project a crucial learning opportunity."
-pubDate: "Dec 29 2023"
+pubDate: "Dec 15 2023"
 heroImage: "/images/projects/blog50/blog50.png"
 tags: ["Python", "Flask", "Web Developement"]
 custom_link_label: [
         {
             name: "GitHub",
-            icon: "/github.svg",
+            icon: "github",
             url: "https://github.com/hanibashir/blog50"
         }
     ] 

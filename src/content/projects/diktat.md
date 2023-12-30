@@ -1,9 +1,10 @@
 ---
 title: "Diktat - Android App"
 description: "Diktat is a mobile application designed for practicing German vocabulary. Users can input words and subsequently test their knowledge with the app. The application audibly reads out the entered word, requiring users to correctly input the corresponding translation."
-pubDate: "Dec 28 2023"
+pubDate: "Dec 20 2023"
 heroImage: ""
 tags: ["Android", "Kotlin"]
+
 #badges: ["In Development", "In Development"]
 ---
 

@@ -1,9 +1,16 @@
 ---
 title: "Ausbildung/Java - Android App"
 description: is an Android app comprises articles in Arabic related to vocational training in Germany. The app is administrated through an online control panel, with articles stored in a MySql database."
-pubDate: "Dec 29 2023"
+pubDate: "Nov 01 2023"
 heroImage: ""
 tags: ["Android", "Kotlin"]
+custom_link_label: [
+    {
+        name: "GitHub",
+        icon: "github",
+        url: "https://github.com/hanibashir/Ausbildung-Java-Android-App"
+    }
+]
 #badges: ["In Development", "In Development"]
 ---
 

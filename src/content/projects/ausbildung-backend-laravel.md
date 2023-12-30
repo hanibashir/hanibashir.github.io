@@ -1,10 +1,9 @@
 ---
 title: "Ausbildung Backend - Laravel"
 description: "Ausbildung - Backend is a Laravel-based control panel designed to manage the database of the Ausbildung Android application."
-pubDate: "Dec 20 2023"
+pubDate: "Nov 01 2023"
 heroImage: ""
 tags: ["PHP", "Laravel"]
-#badges: ["In Development", "In Development"]
 ---
 
 ### About the App

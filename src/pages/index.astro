@@ -8,6 +8,8 @@ const posts = (await getCollection("projects")).sort(
 );
 
 const last_posts = posts.slice(0, 3);
+
+import {urls, summary} from "../js/constants"
 ---
 
 <BaseLayout sideBarActiveItemID="home">
@@ -15,12 +17,7 @@ const last_posts = posts.slice(0, 3);
     <div class="text-xl py-1">Hey there 👋</div>
     <div class="text-5xl font-bold">I'm Hani Bashir</div>
     <div class="py-2">
-      <text class="text-lg">
-        Currently, I'm retraining as an IT Specialist - Application Developer at
-        BBQ Hamburg Institute. I've worked remotely and freelanced as a
-        Technical Writer. I've been learning programming for over 2 years,
-        working on solo projects to apply my skills.
-      </text>
+      <text class="text-lg">{summary}</text>
     </div>
 
   </div>

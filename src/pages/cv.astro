@@ -3,14 +3,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import TimeLineElement from "../components/cv/TimeLine.astro";
 import Link from "@components/Link.astro";
 
-const CS50Url =
-  "https://courses.edx.org/certificates/5cc083930f4a4e51a726e3824d8bced3";
-const kotlinCoreUrl =
-  "https://hyperskill.org/certificates/f36876d1-af52-4b8b-b2d2-f72cf9211777.pdf";
-const ASMUrl =
-  "https://mylogin.exin.nl/polarserver.asp?ToolName=CertificateCheckTool&LastName=Bashir&CertificateNumber=6547490.20867375&ModuleID=630589";
-const ASFUrl =
-  "https://mylogin.exin.nl/polarserver.asp?ToolName=CertificateCheckTool&LastName=Bashir&CertificateNumber=6547490.20866517&ModuleID=630548";
+import {urls, summary} from "../js/constants"
 ---
 
 <BaseLayout title="Resume" sideBarActiveItemID="cv">
@@ -18,12 +11,7 @@ const ASFUrl =
     <div class="text-3xl w-full font-bold">Profile</div>
   </div>
 
-  <div class="mb-10 text-justify">
-    Currently, I'm retraining as an IT Specialist - Application Developer at BBQ
-    Hamburg Institute. I've worked remotely and freelanced as a Technical
-    Writer. I've been learning programming for over 2 years, working on solo
-    projects to apply my skills.
-  </div>
+  <div class="mb-10 text-justify">{summary}</div>
 
   <div class="mb-5">
     <div class="text-3xl w-full font-bold">Education</div>
@@ -44,8 +32,8 @@ const ASFUrl =
     <li>
       CS50x - Introduction to Computer Science
       <Link
-        href={CS50Url}
-        calsses="btn no-underline"
+        href={urls.CS50Url}
+        classes="btn no-underline"
         text="(Check)"
         style="primary"
         target="_blank"
@@ -54,8 +42,8 @@ const ASFUrl =
     <li>
       Kotlin Core
       <Link
-        href={kotlinCoreUrl}
-        calsses="btn no-underline"
+        href={urls.kotlinCoreUrl}
+        classes="btn no-underline"
         text="(Check)"
         style="primary"
         target="_blank"
@@ -64,8 +52,8 @@ const ASFUrl =
     <li>
       Exin Agile Scrum Master
       <Link
-        href={ASMUrl}
-        calsses="btn no-underline"
+        href={urls.ASMUrl}
+        classes="btn no-underline"
         text="(Check)"
         style="primary"
         target="_blank"
@@ -74,8 +62,8 @@ const ASFUrl =
     <li>
       Exin Agile Foundation
       <Link
-        href={ASFUrl}
-        calsses="btn no-underline"
+        href={urls.ASFUrl}
+        classes="btn no-underline"
         text="(Check)"
         style="primary"
         target="_blank"
@@ -128,7 +116,6 @@ const ASFUrl =
   </div>
 
   <ul class="list-disc md:columns-5 columns-2 mx-6">
-    
     <li>Kotlin</li>
     <li>Java</li>
     <li>Gradle</li>

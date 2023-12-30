@@ -29,8 +29,8 @@ const displayDate = dayjs(pubDate).format("ll");
       {
         heroImage && (
           <Image
-            width={750}
-            height={422}
+            width={600}
+            height={250}
             format="webp"
             src={heroImage}
             alt={title}
@@ -51,11 +51,11 @@ const displayDate = dayjs(pubDate).format("ll");
               custom_link_label.map((cll) => (
                 <Link
                   href={cll.url}
-                  calsses="btn no-underline"
+                  classes="flex no-underline"
                   text={cll.name}
                   style="primary"
                   icon={{
-                    path: cll.icon || "/github.svg",
+                    name: cll.icon,
                     side: "left",
                   }}
                   target="_blank"

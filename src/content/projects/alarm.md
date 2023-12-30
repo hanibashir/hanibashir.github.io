@@ -1,18 +1,13 @@
 ---
 title: "Alarm - Android App"
 description: "is a straightforward Android alarm application developed in Kotlin. The project served as a practical learning experience for various Android components, including services, broadcast receivers, and effective notification management."
-pubDate: "Dec 27 2023"
+pubDate: "Dec 01 2023"
 heroImage: "/images/projects/alarm/alarm-project.png"
 tags: ["Android", "Kotlin", "Room"]
 custom_link_label: [
         {
             name: "GitHub",
-            icon: "/github.svg",
-            url: "https://github.com/hanibashir/AlarmApp"
-        }, 
-        {
-            name: "PlayStore",
-            icon: "",
+            icon: "github",
             url: "https://github.com/hanibashir/AlarmApp"
         }
     ] 

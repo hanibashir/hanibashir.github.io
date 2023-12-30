@@ -2,10 +2,16 @@
     display: none;
 }
 
+.header {
+    background-color: #1d1a1a;
+    padding: 10px;
+    text-align: center;
+}
+
 .link {
-    --type: transparent;
-    --fill: transparent;
-    display: flex;
+    --type: rgb(243, 226, 226);
+    --fill: rgb(35, 35, 31);
+    /* display: flex; */
     place-items: center;
     gap: var(--space-2xs);
     width: fit-content;
