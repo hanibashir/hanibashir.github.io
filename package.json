@@ -1,8 +1,9 @@
 {
-  "name": "astrofy",
-  "description": "Astrofy is a free and open-source template for your Personal Portfolio Website built with Astro and TailwindCSS. Create in minutes a website with Blog, CV, Project Section, Store and RSS Feed.",
+  "name": "hb-protofolio",
+  "description": "Hani Bashir protfolio website Created with 'Astrofy' Template.",
   "type": "module",
   "version": "2.5.1",
+  "packageManager": "npm@10.2.5",
   "private": true,
   "scripts": {
     "dev": "astro dev",
