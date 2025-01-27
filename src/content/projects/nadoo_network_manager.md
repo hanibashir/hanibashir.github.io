@@ -8,7 +8,7 @@ custom_link_label: [
         {
             name: "GitHub",
             icon: "github",
-            url: "https://github.com/hanibashir/nadoo-network-manager"
+            url: "https://github.com/NADOOIT/NADOO-Networkmanager"
         }
     ]
 ---
