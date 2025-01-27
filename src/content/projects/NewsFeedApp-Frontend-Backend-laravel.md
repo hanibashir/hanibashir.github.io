@@ -1,7 +1,7 @@
 ---
 title: "NewsFeedApp - Frontend & Backend - Laravel"
 description: "NewsFeedApp is a comprehensive project involving both frontend and backend development, aimed at enhancing proficiency in the Laravel framework and acquiring advanced techniques."
-pubDate: "Oct 01 2023"
+pubDate: "Dec 20 2023"
 heroImage: ""
 tags: ["PHP", "Laravel"]
 #badges: ["In Development", "In Development"]
