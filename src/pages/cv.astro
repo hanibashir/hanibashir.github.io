@@ -3,136 +3,107 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import TimeLineElement from "../components/cv/TimeLine.astro";
 import Link from "@components/Link.astro";
 
-import {urls, summary} from "../js/constants"
+import {urls, summary} from "../js/constants";
 ---
 
 <BaseLayout title="Resume" sideBarActiveItemID="cv">
-  <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Profile</div>
-  </div>
+    <!-- Profile Section -->
+    <div class="mb-5">
+        <div class="text-3xl w-full font-bold">Profile</div>
+    </div>
+    <div class="mb-10 text-justify">{summary}</div>
 
-  <div class="mb-10 text-justify">{summary}</div>
+    <!-- Experience Section -->
+    <div class="mb-5">
+        <div class="text-3xl w-full font-bold">Experience</div>
+    </div>
+    <div class="time-line-container mb-10">
+        <TimeLineElement
+                title="Developer"
+                subtitle="From May 2024 to Jan. 2025 at Christoph Backhaus IT, Duisburg"
+        >
+            Developed and tested features for a Python-based desktop application using Toga and Briefcase.
+            Collaborated with a team to implement an MVC architecture and improve the user experience.
+        </TimeLineElement>
+    </div>
 
-  <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Education</div>
-  </div>
+    <!-- Education Section -->
+    <div class="mb-5">
+        <div class="text-3xl w-full font-bold">Education</div>
+    </div>
+    <div class="time-line-container grid gap-4 mb-10">
+        <TimeLineElement
+                title="Fachinformatiker Anwendungsentwickler"
+                subtitle="Feb. 2023 - Jan. 2025, BBQ Hamburg"
+        />
+    </div>
 
-  <div class="time-line-container grid gap-4 mb-10">
-    <TimeLineElement
-      title="Fachinformatiker Anwendungsentwickler"
-      subtitle="Feb. 2023 to Jan. 2025 at BBQ Institute, Hamburg, Germany"
-    />
-  </div>
+    <!-- Certifications Section -->
+    <div class="mb-5">
+        <div class="text-3xl w-full font-bold">Certifications</div>
+    </div>
+    <ul class="list-disc mx-6 mb-10 grid gap-2">
+        <li>
+            Fachinformatiker Anwendungsentwickler – Jan. 2025
+        </li>
+        <li>
+            CS50x: Introduction to Computer Science – HarvardX
+            <Link
+                    href={urls.CS50Url}
+                    classes="btn no-underline"
+                    text="(Check)"
+                    style="primary"
+                    target="_blank"
+            />
+        </li>
+        <li>
+            Kotlin Core – JetBrains Academy
+            <Link
+                    href={urls.kotlinCoreUrl}
+                    classes="btn no-underline"
+                    text="(Check)"
+                    style="primary"
+                    target="_blank"
+            />
+        </li>
+        <li>
+            Exin Agile Scrum Master
+            <Link
+                    href={urls.ASMUrl}
+                    classes="btn no-underline"
+                    text="(Check)"
+                    style="primary"
+                    target="_blank"
+            />
+        </li>
+        <li>
+            Exin Agile Foundation
+            <Link
+                    href={urls.ASFUrl}
+                    classes="btn no-underline"
+                    text="(Check)"
+                    style="primary"
+                    target="_blank"
+            />
+        </li>
+    </ul>
 
-  <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Certifications</div>
-  </div>
-
-  <ul class="list-disc mx-6 mb-10 grid gap-2">
-    <li>
-      Fachinformatiker Anwendungsentwickler
-      <!--<Link
-        href={urls.CS50Url}
-        classes="btn no-underline"
-        text="(Check)"
-        style="primary"
-        target="_blank"
-      />-->
-    </li>
-    <li>
-      CS50x - Introduction to Computer Science
-      <Link
-        href={urls.CS50Url}
-        classes="btn no-underline"
-        text="(Check)"
-        style="primary"
-        target="_blank"
-      />
-    </li>
-    <li>
-      Kotlin Core
-      <Link
-        href={urls.kotlinCoreUrl}
-        classes="btn no-underline"
-        text="(Check)"
-        style="primary"
-        target="_blank"
-      />
-    </li>
-    <li>
-      Exin Agile Scrum Master
-      <Link
-        href={urls.ASMUrl}
-        classes="btn no-underline"
-        text="(Check)"
-        style="primary"
-        target="_blank"
-      />
-    </li>
-    <li>
-      Exin Agile Foundation
-      <Link
-        href={urls.ASFUrl}
-        classes="btn no-underline"
-        text="(Check)"
-        style="primary"
-        target="_blank"
-      />
-    </li>
-  </ul>
-
-  <!-- <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Experience</div>
-  </div> -->
-
-  <!-- <div class="time-line-container mb-10">
-    <TimeLineElement
-      title="Job Title at Project or Company Name"
-      subtitle="From [Start Date] to [End Date] at [Company], [City], [Country]"
-    >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-      cupidatat non proident.
-    </TimeLineElement>
-    <TimeLineElement
-      title="Job Title at Project or Company Name"
-      subtitle="From [Start Date] to [End Date] at [Company], [City], [Country]"
-    >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-      cupidatat non proident.
-    </TimeLineElement>
-    <TimeLineElement
-      title="Job Title at Project or Company Name"
-      subtitle="From [Start Date] to [End Date] at [Company], [City], [Country]"
-    >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-      velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-      cupidatat non proident.
-    </TimeLineElement>
-  </div> -->
-
-  <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Skills</div>
-  </div>
-
-  <ul class="list-disc md:columns-5 columns-2 mx-6">
-    <li>Kotlin</li>
-    <li>Java</li>
-    <li>Gradle</li>
-    <li>HTML/CSS</li>
-    <li>PHP/Laravel</li>
-    <li>JSON</li>
-    <li>MySQL</li>
-    <li>Python/Flask</li>
-  </ul>
+    <!-- Skills Section -->
+    <div class="mb-5">
+        <div class="text-3xl w-full font-bold">Skills</div>
+    </div>
+    <ul class="list-disc mx-6 mb-10 grid gap-4">
+        <li>
+            <strong>Programming Languages:</strong> Python, Kotlin, Java, PHP
+        </li>
+        <li>
+            <strong>Web Development:</strong> Flask, Laravel, HTML/CSS
+        </li>
+        <li>
+            <strong>SQL & Databases:</strong> MySQL, SQLite
+        </li>
+        <li>
+            <strong>Tools:</strong> Git, PyCharm, PHPStorm
+        </li>
+    </ul>
 </BaseLayout>
