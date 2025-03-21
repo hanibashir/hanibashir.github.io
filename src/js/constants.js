@@ -12,7 +12,10 @@ export const urls = {
 
 //export const BBQLink = '<a href ="https://www.bbq.de/umschulung/hamburg/fachinformatiker-anwendungsentwicklung/" target = "_blank">BBQ Hamburg</a>'
 export const summary =
-    "Currently, I'm retraining as an IT Specialist - Application Developer at BBQ Hamburg Institute.I've worked remotely and freelanced as a Technical Writer. I've been learning " + 
-    "programming for over 2 years, working on solo projects to apply my skills."
+    "I recently completed my training as an Application Developer at BBQ Hamburg Institute in January 2025. " +
+    "Over the past two years, I have been learning programming intensively, working on solo and collaborative projects to apply and expand my skills.\r" +
+    "My latest project, Nadoo Network Manager, was developed as my IHK final project. It is a desktop application built using Python, Toga, and Briefcase. " +
+    "The application automates the creation of presentation slides and streamlines the management of network members for professional meetings, " +
+    "utilizing the MVC architecture."
 
 
