@@ -21,10 +21,9 @@ jobs:
       - name: Checkout your repository using git
         uses: actions/checkout@v3
       - name: Install, build, and upload your site
-        uses: withastro/action@v1
-        # DEBUG THE BUILD OUTPUT
-      - name: Debug deployment directory
-        run: ls -la public
+        uses: withastro/action@v4
+        
+      
 
         #with:
           #path: . # The root location of your Astro project inside the repository. (optional)
@@ -40,6 +39,6 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v1
+        uses: actions/deploy-pages@v4
         
       
