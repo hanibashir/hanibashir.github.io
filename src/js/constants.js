@@ -14,14 +14,12 @@ export const urls = {
 export const summary =
     "Hey there," +
 
-    "I'm Hani Bashir, a certified Fachinformatiker für Anwendungsentwicklung (IHK) based in Hamburg."+
+    "a certified Fachinformatiker für Anwendungsentwicklung (IHK) based in Hamburg. "+
     
-    "I develop web, desktop and mobile applications with PHP, Laravel, Python, Kotlin and SQL. "+
-    "After completing my training in January 2025, I continued working remotely on project-based software tasks and built my own web and e-commerce projects."
+    "I develop web, desktop and mobile applications with PHP, Laravel, and Python. "+
+    "I worked remotely on project-based software tasks and built my own web and e-commerce projects."
     
     "My practical experience includes Laravel applications, Python desktop software, database-driven systems, Linux server setup, "+
     "Git-based workflows and deployment automation."
     
-    "I am currently looking for a position as a Junior Software Developer / Application Developer in Hamburg and I am open to proving my skills in a trial workday."
-
 
