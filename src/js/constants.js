@@ -12,10 +12,16 @@ export const urls = {
 
 //export const BBQLink = '<a href ="https://www.bbq.de/umschulung/hamburg/fachinformatiker-anwendungsentwicklung/" target = "_blank">BBQ Hamburg</a>'
 export const summary =
-    "I recently completed my training as an Application Developer at BBQ Hamburg Institute in January 2025. " +
-    "Over the past two years, I have been learning programming intensively, working on solo and collaborative projects to apply and expand my skills.\r" +
-    "My latest project, Nadoo Network Manager, was developed as my IHK final project. It is a desktop application built using Python, Toga, and Briefcase. " +
-    "The application automates the creation of presentation slides and streamlines the management of network members for professional meetings, " +
-    "utilizing the MVC architecture."
+    "Hey there," +
+
+    "I'm Hani Bashir, a certified Fachinformatiker für Anwendungsentwicklung (IHK) based in Hamburg."+
+    
+    "I develop web, desktop and mobile applications with PHP, Laravel, Python, Kotlin and SQL. "+
+    "After completing my training in January 2025, I continued working remotely on project-based software tasks and built my own web and e-commerce projects."
+    
+    "My practical experience includes Laravel applications, Python desktop software, database-driven systems, Linux server setup, "+
+    "Git-based workflows and deployment automation."
+    
+    "I am currently looking for a position as a Junior Software Developer / Application Developer in Hamburg and I am open to proving my skills in a trial workday."
 
 
