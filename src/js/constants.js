@@ -17,9 +17,9 @@ export const summary =
     "a certified Fachinformatiker für Anwendungsentwicklung (IHK) based in Hamburg. "+
     
     "I develop web, desktop and mobile applications with PHP, Laravel, and Python. "+
-    "I worked remotely on project-based software tasks and built my own web and e-commerce projects."
+    "I worked remotely on project-based software tasks and built my own web and e-commerce projects. " +
     
-    "My practical experience includes Laravel applications, Python desktop software, database-driven systems, Linux server setup, "+
-    "Git-based workflows and deployment automation."
+    "\nMy practical experience includes Laravel applications, Python desktop software, database-driven systems, Linux server setup, "+
+    "Git-based workflows and deployment automation." 
     
 
