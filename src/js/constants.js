@@ -23,3 +23,9 @@ export const summary =
     "Git-based workflows and deployment automation." 
     
 
+export const cv_summary = 
+    "Certified Fachinformatiker für Anwendungsentwicklung (IHK) with hands-on experience in PHP, Laravel, Python, Kotlin and SQL. "+
+    "\n I have developed web, desktop and mobile applications, worked with databases, Linux servers, Git workflows and deployment automation." +
+
+    "\n I am looking for a Junior Software Developer / Application Developer position in Hamburg, preferably in web development, "+
+    "backend development or business software development."
