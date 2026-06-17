@@ -12,6 +12,7 @@ export const urls = {
 
 //export const BBQLink = '<a href ="https://www.bbq.de/umschulung/hamburg/fachinformatiker-anwendungsentwicklung/" target = "_blank">BBQ Hamburg</a>'
 export const summary =
+
     "a certified Fachinformatiker für Anwendungsentwicklung (IHK) based in Hamburg. " +
 
     "I develop web, desktop and mobile applications with PHP, Laravel, Python, Kotlin and SQL. " +
